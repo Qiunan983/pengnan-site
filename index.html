@@ -106,6 +106,8 @@
   td.price{font-variant-numeric:tabular-nums;font-weight:700}
   td.price small{color:var(--mut);font-weight:500;font-size:12px}
   .note{font-size:12.5px;color:var(--mut);margin-top:14px}
+  .dl{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px}
+  .dl-note{font-size:12.5px;color:var(--mut);max-width:560px;line-height:1.5}
 
   /* ---------- cards ---------- */
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -281,6 +283,11 @@
       </table>
     </div>
     <p class="note">All prices FOB Shenzhen, freight quoted at cost on a per-shipment basis. Suggested retail is a reference only — you set your own shelf price.</p>
+
+    <div class="dl">
+      <a class="btn btn-amber" href="line-sheet.pdf" download>Download the line sheet (PDF)</a>
+      <span class="dl-note">One page, all 8 SKUs, carton specs and three price tiers. Print it, take it to your buying meeting.</span>
+    </div>
   </div>
 </section>
 
