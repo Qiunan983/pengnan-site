@@ -4,482 +4,375 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pengnan Party Supply — Wholesale Party Goods, Factory Direct</title>
-<meta name="description" content="Wholesale balloons, table covers, banners and balloon pumps direct from our factory in China. MOQ USD 500 per shipment. Air freight, 7-12 days to your door. Neutral packaging and your own label, free.">
+<meta name="description" content="Wholesale balloons, table covers, banners and balloon pumps direct from our factory in China. MOQ USD 500 per shipment. Air freight, 7-12 days to your door.">
 <style>
   :root{
-    --navy:#0f172a;
-    --navy-2:#1e293b;
-    --gold:#f59e0b;
-    --gold-2:#fbbf24;
-    --ink:#0b1220;
-    --muted:#64748b;
-    --line:#e2e8f0;
-    --bg:#ffffff;
-    --bg-2:#f8fafc;
+    --ink:#0b1220; --ink2:#16213a; --line:#e3e7ee;
+    --mut:#68748a; --amber:#f59e0b; --amber-d:#d97706;
+    --paper:#ffffff; --soft:#f6f8fb;
   }
   *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
+  html{scroll-behavior:smooth}
   body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    color:var(--ink);
-    background:var(--bg);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  a{color:inherit}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--amber-d)}
 
   /* ---------- header ---------- */
   header{
-    background:var(--navy);
-    color:#fff;
-    padding:16px 0;
-    position:sticky;top:0;z-index:50;
-    border-bottom:1px solid rgba(255,255,255,.08);
+    position:sticky;top:0;z-index:50;background:rgba(11,18,32,.94);
+    backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);
   }
-  .hdr{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em}
-  .brand .mark{
-    width:38px;height:38px;border-radius:9px;background:var(--gold);
-    color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:19px;flex:0 0 auto;
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:11px;color:#fff}
+  .logo{
+    width:36px;height:36px;border-radius:9px;background:var(--amber);color:#0b1220;
+    display:grid;place-items:center;font-weight:900;font-size:19px;flex:none;
   }
-  .brand small{display:block;font-weight:500;font-size:11px;letter-spacing:.14em;
-    text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:2px}
-  .hdr nav{display:flex;gap:22px;font-size:14px;color:rgba(255,255,255,.75)}
-  .hdr nav a{text-decoration:none}
-  .hdr nav a:hover{color:#fff}
+  .brand b{font-size:16px;letter-spacing:-.01em}
+  .brand span{display:block;font-size:10px;letter-spacing:.13em;color:#8ea0c0;text-transform:uppercase}
+  .nav nav{display:flex;gap:26px;font-size:14px;color:#c7d2e4}
+  .nav nav a:hover{color:#fff}
   .btn{
-    display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;
-    text-decoration:none;font-size:14px;border:1px solid transparent;transition:.15s;
+    display:inline-block;padding:11px 20px;border-radius:8px;font-weight:700;font-size:14px;
+    border:1px solid transparent;cursor:pointer;transition:.18s;
   }
-  .btn-gold{background:var(--gold);color:var(--navy)}
-  .btn-gold:hover{background:var(--gold-2)}
+  .btn-amber{background:var(--amber);color:#161208}
+  .btn-amber:hover{background:#ffb01f}
   .btn-ghost{border-color:rgba(255,255,255,.28);color:#fff}
-  .btn-ghost:hover{border-color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  @media(max-width:820px){ .nav nav{display:none} }
 
   /* ---------- hero ---------- */
-  .hero{background:var(--navy);color:#fff;padding:72px 0 64px;position:relative;overflow:hidden}
-  .hero:after{
-    content:"";position:absolute;right:-180px;top:-120px;width:520px;height:520px;border-radius:50%;
-    background:radial-gradient(circle,rgba(245,158,11,.16),transparent 68%);
+  .hero{position:relative;isolation:isolate;color:#fff;overflow:hidden}
+  .hero-img{
+    position:absolute;inset:0;z-index:-2;
+    background:url("img/hero.jpg") center 32%/cover no-repeat;
   }
-  .eyebrow{
-    display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--gold);font-weight:700;margin-bottom:18px;
+  .hero-img::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(100deg,rgba(8,13,24,.94) 0%,rgba(8,13,24,.82) 46%,rgba(8,13,24,.45) 100%);
   }
+  .hero-inner{padding:96px 0 104px;max-width:660px}
   .hero h1{
-    font-size:clamp(29px,4.4vw,46px);line-height:1.14;margin:0 0 18px;
-    letter-spacing:-.02em;font-weight:800;max-width:21ch;
+    font-size:clamp(30px,4.6vw,50px);line-height:1.1;margin:14px 0 20px;
+    letter-spacing:-.025em;font-weight:800;
   }
-  .hero h1 em{font-style:normal;color:var(--gold)}
-  .hero p.lead{font-size:clamp(16px,2.2vw,19px);color:rgba(255,255,255,.78);max-width:52ch;margin:0 0 30px}
+  .hero h1 em{color:var(--amber);font-style:normal}
+  .hero p.lead{font-size:17px;color:#c3cee0;margin:0 0 30px;max-width:540px}
   .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:820px){ .hero-inner{padding:70px 0 76px} }
 
   /* ---------- trust strip ---------- */
-  .strip{background:var(--navy-2);color:#fff;padding:0;border-top:1px solid rgba(255,255,255,.07)}
-  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.07)}
-  .strip .cell{background:var(--navy-2);padding:22px 18px}
-  .strip .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:6px}
-  .strip .v{font-size:16px;font-weight:700;color:var(--gold)}
-  .strip .d{font-size:12.5px;color:rgba(255,255,255,.6);margin-top:2px}
+  .strip{background:var(--ink2);color:#fff}
+  .strip .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .strip .cell{padding:22px 24px;border-right:1px solid rgba(255,255,255,.09)}
+  .strip .cell:last-child{border-right:0}
+  .strip .k{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#8ea0c0;margin-bottom:5px}
+  .strip .v{font-size:16px;font-weight:700}
+  @media(max-width:820px){ .strip .grid{grid-template-columns:repeat(2,1fr)} }
 
-  /* ---------- section ---------- */
-  section{padding:68px 0}
-  section.alt{background:var(--bg-2)}
-  .sec-head{max-width:62ch;margin-bottom:36px}
-  .sec-head h2{font-size:clamp(24px,3.4vw,32px);margin:0 0 10px;letter-spacing:-.01em}
-  .sec-head p{margin:0;color:var(--muted);font-size:16px}
-
-  /* ---------- product table ---------- */
-  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
-  table{width:100%;border-collapse:collapse;font-size:14px;min-width:820px;background:#fff}
-  thead th{
-    background:var(--navy);color:#fff;text-align:left;padding:13px 14px;
-    font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;white-space:nowrap;
+  /* ---------- gallery ---------- */
+  .gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:0;background:var(--ink)}
+  .gallery figure{margin:0;position:relative;overflow:hidden;height:380px}
+  .gallery img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .gallery figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:34px 26px 18px;
+    background:linear-gradient(transparent,rgba(6,10,18,.85));
+    color:#fff;font-size:13px;letter-spacing:.02em;
   }
-  tbody td{padding:13px 14px;border-top:1px solid var(--line);vertical-align:top}
-  tbody tr:nth-child(even){background:#fbfcfe}
-  tbody tr:hover{background:#f4f8ff}
-  .sku{font-weight:700;white-space:nowrap;color:var(--navy)}
-  .item{font-weight:600}
-  .spec{color:var(--muted);font-size:13px;display:block;margin-top:2px}
-  .price{font-variant-numeric:tabular-nums;white-space:nowrap}
-  .price b{color:var(--navy)}
-  .num{text-align:right;font-variant-numeric:tabular-nums}
-  .tier-note{margin-top:14px;font-size:13px;color:var(--muted)}
+  .gallery figcaption b{display:block;font-size:15px;margin-bottom:2px}
+  @media(max-width:820px){ .gallery{grid-template-columns:1fr} }
+
+  /* ---------- sections ---------- */
+  section{padding:74px 0}
+  section.soft{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  h2{font-size:clamp(23px,3vw,31px);letter-spacing:-.02em;margin:8px 0 12px;font-weight:800}
+  .sub{color:var(--mut);font-size:15px;margin:0 0 34px;max-width:640px}
+
+  /* ---------- tables ---------- */
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+  table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+  thead th{
+    background:var(--ink);color:#fff;text-align:left;padding:13px 16px;
+    font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;white-space:nowrap;
+  }
+  tbody td{padding:13px 16px;border-top:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:#fafbfd}
+  td.sku{font-weight:800;color:var(--ink2);white-space:nowrap}
+  td.price{font-variant-numeric:tabular-nums;font-weight:700}
+  td.price small{color:var(--mut);font-weight:500;font-size:12px}
+  .note{font-size:12.5px;color:var(--mut);margin-top:14px}
 
   /* ---------- cards ---------- */
-  .grid{display:grid;gap:20px}
-  .grid.g3{grid-template-columns:repeat(3,1fr)}
-  .grid.g2{grid-template-columns:repeat(2,1fr)}
-  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
-  .card h3{margin:0 0 8px;font-size:16px}
-  .card p{margin:0;color:var(--muted);font-size:14.5px}
-  .card .ico{
-    width:38px;height:38px;border-radius:9px;background:#fef3c7;color:#b45309;
-    display:grid;place-items:center;font-weight:800;margin-bottom:14px;font-size:15px;
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;
   }
+  .card h3{margin:0 0 7px;font-size:15px;font-weight:800;letter-spacing:-.01em}
+  .card p{margin:0;font-size:14px;color:var(--mut)}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);display:inline-block;margin-right:9px;vertical-align:2px}
+  @media(max-width:900px){ .cards{grid-template-columns:repeat(2,1fr)} }
+  @media(max-width:600px){ .cards{grid-template-columns:1fr} }
 
   /* ---------- steps ---------- */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
-  .step{position:relative;padding-top:44px}
-  .step:before{
-    counter-increment:s;content:counter(s);
-    position:absolute;top:0;left:0;width:30px;height:30px;border-radius:50%;
-    background:var(--navy);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700;
+  .step{position:relative;padding-top:8px}
+  .step .n{
+    width:32px;height:32px;border-radius:50%;background:var(--ink);color:#fff;
+    display:grid;place-items:center;font-weight:800;font-size:14px;margin-bottom:12px;
   }
-  .step h4{margin:0 0 6px;font-size:15px}
-  .step p{margin:0;font-size:14px;color:var(--muted)}
+  .step h3{margin:0 0 6px;font-size:15px;font-weight:800}
+  .step p{margin:0;font-size:13.5px;color:var(--mut)}
+  @media(max-width:900px){ .steps{grid-template-columns:repeat(2,1fr)} }
 
   /* ---------- contact ---------- */
-  .contact{background:var(--navy);color:#fff}
-  .contact .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
-  .contact h2{font-size:clamp(26px,3.6vw,34px);margin:0 0 14px;letter-spacing:-.01em}
-  .contact p{color:rgba(255,255,255,.72);margin:0 0 26px;font-size:16px}
-  .clist{list-style:none;padding:0;margin:0;display:grid;gap:14px}
-  .clist li{display:flex;gap:12px;align-items:flex-start;font-size:15px}
-  .clist .lbl{color:rgba(255,255,255,.5);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:2px}
-  .clist a{color:var(--gold-2);text-decoration:none;word-break:break-all}
-  .clist a:hover{text-decoration:underline}
-
-  form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:26px}
-  form h3{margin:0 0 18px;font-size:16px}
-  .field{margin-bottom:14px}
-  .field label{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
-    color:rgba(255,255,255,.55);margin-bottom:6px}
-  .field input,.field textarea,.field select{
-    width:100%;padding:11px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.16);
-    background:rgba(255,255,255,.96);color:var(--ink);font-size:14.5px;font-family:inherit;
+  .contact{position:relative;color:#fff;overflow:hidden;isolation:isolate}
+  .contact-img{position:absolute;inset:0;z-index:-2;background:url("img/confetti.jpg") center/cover no-repeat}
+  .contact-img::after{content:"";position:absolute;inset:0;background:rgba(9,14,26,.9)}
+  .contact .cols{display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start}
+  .contact h2{color:#fff;margin-top:0}
+  .contact p{color:#b9c6dc}
+  .cli{display:flex;gap:12px;align-items:flex-start;margin:18px 0;font-size:15px}
+  .cli b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8ea0c0;margin-bottom:2px}
+  .cli a:hover{color:var(--amber)}
+  form{background:#fff;border-radius:14px;padding:24px;color:var(--ink);box-shadow:0 18px 50px rgba(0,0,0,.3)}
+  form h3{margin:0 0 4px;font-size:17px}
+  form p.hint{margin:0 0 18px;font-size:13px;color:var(--mut)}
+  label{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#4a5670;margin:14px 0 6px}
+  input,textarea,select{
+    width:100%;padding:11px 13px;border:1px solid #d3dae6;border-radius:8px;
+    font-size:14px;font-family:inherit;color:var(--ink);background:#fff;
   }
-  .field textarea{min-height:92px;resize:vertical}
-  form .btn{width:100%;text-align:center;cursor:pointer;font-size:15px;padding:13px}
-  .formnote{font-size:12px;color:rgba(255,255,255,.45);margin:12px 0 0;text-align:center}
+  input:focus,textarea:focus,select:focus{outline:2px solid rgba(245,158,11,.4);border-color:var(--amber)}
+  textarea{min-height:92px;resize:vertical}
+  form button{
+    width:100%;margin-top:20px;padding:13px;border:0;border-radius:8px;
+    background:var(--amber);color:#161208;font-weight:800;font-size:15px;cursor:pointer;
+  }
+  form button:hover{background:#ffb01f}
+  @media(max-width:980px){ .contact .cols{grid-template-columns:1fr;gap:34px} }
 
   /* ---------- footer ---------- */
-  footer{background:#0a101d;color:rgba(255,255,255,.5);padding:34px 0;font-size:13px}
-  .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
-  .foot strong{color:rgba(255,255,255,.8);font-weight:600}
-
-  @media (max-width:900px){
-    .contact .wrap{grid-template-columns:1fr;gap:36px}
-    .grid.g3{grid-template-columns:1fr 1fr}
-    .steps{grid-template-columns:1fr 1fr;gap:24px}
-    .strip .wrap{grid-template-columns:1fr 1fr}
-    .hdr nav{display:none}
-  }
-  @media (max-width:600px){
-    .grid.g3,.grid.g2{grid-template-columns:1fr}
-    .steps{grid-template-columns:1fr}
-    section{padding:52px 0}
-    .hero{padding:52px 0 46px}
-  }
+  footer{background:var(--ink);color:#8ea0c0;font-size:13px;padding:34px 0}
+  footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer b{color:#fff;font-weight:700}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="wrap hdr">
+  <div class="wrap nav">
     <div class="brand">
-      <span class="mark">P</span>
-      <span>Pengnan Party Supply
-        <small>Wholesale &middot; Factory Direct</small>
-      </span>
+      <div class="logo">P</div>
+      <div>
+        <b>Pengnan Party Supply</b>
+        <span>Wholesale · Factory Direct</span>
+      </div>
     </div>
     <nav>
       <a href="#products">Products</a>
       <a href="#pricing">Pricing</a>
-      <a href="#terms">Terms</a>
+      <a href="#why">Why us</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-gold" href="#contact">Request a quote</a>
+    <a class="btn btn-amber" href="#contact">Request a quote</a>
   </div>
 </header>
 
-<div class="hero">
-  <div class="wrap">
-    <span class="eyebrow">For party stores, balloon decorators &amp; event wholesalers</span>
-    <h1>Factory-direct party supplies. <em>No middleman.</em></h1>
+<section class="hero">
+  <div class="hero-img"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow" style="color:#fbbf24">For party stores, balloon decorators &amp; event wholesalers</div>
+    <h1>Factory-direct party supplies.<br><em>No middleman.</em></h1>
     <p class="lead">
       Balloons, table covers, banners, arches and pumps at factory prices.
-      Order from USD 500 &mdash; we ship by air and it reaches your door in 7&ndash;12 days.
+      Order from USD 500 — we ship by air and it reaches your door in 7–12 days.
       Neutral cartons, your own label applied free.
     </p>
     <div class="cta">
-      <a class="btn btn-gold" href="#contact">Get the price list</a>
+      <a class="btn btn-amber" href="#contact">Get the price list</a>
       <a class="btn btn-ghost" href="#products">See 8 SKUs</a>
     </div>
   </div>
-</div>
+</section>
 
 <div class="strip">
-  <div class="wrap">
-    <div class="cell"><div class="k">Minimum order</div><div class="v">USD 500</div><div class="d">Per shipment, not per item</div></div>
-    <div class="cell"><div class="k">Delivery</div><div class="v">7&ndash;12 days</div><div class="d">By air, door to door</div></div>
-    <div class="cell"><div class="k">Packing</div><div class="v">Neutral + label</div><div class="d">Your label applied free</div></div>
-    <div class="cell"><div class="k">Mixed cartons</div><div class="v">Yes</div><div class="d">Balloons, dots &amp; strips mix</div></div>
+  <div class="wrap grid">
+    <div class="cell"><div class="k">Minimum order</div><div class="v">USD 500</div></div>
+    <div class="cell"><div class="k">Delivery</div><div class="v">7–12 days</div></div>
+    <div class="cell"><div class="k">Packing</div><div class="v">Neutral + your label</div></div>
+    <div class="cell"><div class="k">Mixed cartons</div><div class="v">Yes</div></div>
   </div>
+</div>
+
+<div class="gallery">
+  <figure>
+    <img src="img/hero.jpg" alt="Balloon arch built from our balloons and arch kit">
+    <figcaption><b>Balloon arches</b>Built with PP-01 balloons, PP-02 glue dots and PP-07 arch kit</figcaption>
+  </figure>
+  <figure>
+    <img src="img/balloons.jpg" alt="Latex party balloons">
+    <figcaption><b>12" latex balloons</b>6 colours, 2.8g, same price — mix freely in one carton</figcaption>
+  </figure>
 </div>
 
 <section id="products">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>What we ship</h2>
-      <p>Eight SKUs we keep in stock and know the carton specs of. Nothing we cannot quote in 24 hours.</p>
-    </div>
+    <div class="eyebrow">What we ship</div>
+    <h2>Eight SKUs, all in stock</h2>
+    <p class="sub">
+      Every line ships in its own printed carton with the pack quantity and gross weight shown below —
+      so you can quote freight before you order, not after.
+    </p>
 
-    <div class="table-scroll">
+    <div class="tbl-wrap">
       <table>
         <thead>
           <tr>
-            <th>SKU</th>
-            <th>Item</th>
-            <th>Specification</th>
-            <th class="num">Carton pack</th>
-            <th class="num">Carton size (cm)</th>
-            <th class="num">Gross wt</th>
+            <th>SKU</th><th>Item</th><th>Specification</th>
+            <th>Carton pack</th><th>Carton size</th><th>Gross wt</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="sku">PP-01</td>
-            <td class="item">Balloons 12 inch</td>
-            <td><span class="spec">2.8 g thick latex &middot; 6 colours, same price, mixable</span></td>
-            <td class="num">5,000 pcs</td>
-            <td class="num">50&times;33&times;36</td>
-            <td class="num">15 kg</td>
-          </tr>
-          <tr>
-            <td class="sku">PP-02</td>
-            <td class="item">Balloon glue dots</td>
-            <td><span class="spec">Double sided &middot; 100 dots / sheet &middot; mixable with balloons</span></td>
-            <td class="num">2,000 pcs</td>
-            <td class="num">50&times;33&times;36</td>
-            <td class="num">16 kg</td>
-          </tr>
-          <tr>
-            <td class="sku">PP-03</td>
-            <td class="item">Balloon arch strip</td>
-            <td><span class="spec">5 m connecting strip &middot; mixable with balloons</span></td>
-            <td class="num">2,000 pcs</td>
-            <td class="num">50&times;33&times;36</td>
-            <td class="num">12 kg</td>
-          </tr>
-          <tr>
-            <td class="sku">PP-04</td>
-            <td class="item">Table cover 54 &times; 108 in</td>
-            <td><span class="spec">PEVA 90 gsm &middot; waterproof &middot; 5 colours, same price</span></td>
-            <td class="num">200 pcs</td>
-            <td class="num">40&times;40&times;45</td>
-            <td class="num">19 kg</td>
-          </tr>
-          <tr>
-            <td class="sku">PP-05</td>
-            <td class="item">Happy Birthday banner</td>
-            <td><span class="spec">Joint-letter bunting &middot; ready to hang</span></td>
-            <td class="num">500 pcs</td>
-            <td class="num">45&times;40&times;50</td>
-            <td class="num">18 kg</td>
-          </tr>
-          <tr>
-            <td class="sku">PP-06</td>
-            <td class="item">Hand balloon pump</td>
-            <td><span class="spec">27.5 cm &middot; dual nozzle &middot; 2 colours</span></td>
-            <td class="num">100 pcs</td>
-            <td class="num">47&times;46&times;25</td>
-            <td class="num">8.5 kg</td>
-          </tr>
-          <tr>
-            <td class="sku">PP-07</td>
-            <td class="item">Balloon arch kit</td>
-            <td><span class="spec">15-section fibreglass pole + water-bag base</span></td>
-            <td class="num">12 pcs</td>
-            <td class="num">54&times;44&times;43</td>
-            <td class="num">20 kg</td>
-          </tr>
-          <tr>
-            <td class="sku">PP-08</td>
-            <td class="item">Foot balloon pump</td>
-            <td><span class="spec">27.5 cm &middot; double layer &middot; 2 colours</span></td>
-            <td class="num">150 pcs</td>
-            <td class="num">105&times;75&times;30</td>
-            <td class="num">10 kg</td>
-          </tr>
+          <tr><td class="sku">PP-01</td><td>Balloons 12"</td><td>12 inch, 6 colours, same price, mixable</td><td>5,000</td><td>50×33×36 cm</td><td>15 kg</td></tr>
+          <tr><td class="sku">PP-02</td><td>Balloon glue dots</td><td>Double-sided, 100 dots/sheet, mixable with balloons</td><td>2,000</td><td>50×33×36 cm</td><td>16 kg</td></tr>
+          <tr><td class="sku">PP-03</td><td>Balloon arch strip</td><td>5 m connecting strip, mixable with balloons</td><td>2,000</td><td>50×33×36 cm</td><td>12 kg</td></tr>
+          <tr><td class="sku">PP-04</td><td>Table cover 54×108 in</td><td>PEVA 90 gsm, 5 colours, waterproof</td><td>200</td><td>40×40×45 cm</td><td>19 kg</td></tr>
+          <tr><td class="sku">PP-05</td><td>Happy Birthday banner</td><td>Joint-letter bunting, ready to hang</td><td>500</td><td>45×40×50 cm</td><td>18 kg</td></tr>
+          <tr><td class="sku">PP-06</td><td>Hand balloon pump</td><td>27.5 cm, dual nozzle, 2 colours</td><td>100</td><td>47×46×25 cm</td><td>8.5 kg</td></tr>
+          <tr><td class="sku">PP-07</td><td>Balloon arch kit</td><td>15-section fibreglass pole + water-bag base</td><td>12</td><td>54×44×43 cm</td><td>20 kg</td></tr>
+          <tr><td class="sku">PP-08</td><td>Foot balloon pump</td><td>27.5 cm, double layer, 2 colours</td><td>150</td><td>105×75×30 cm</td><td>10 kg</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="tier-note">All prices FOB Shenzhen. Freight quoted at cost on a per-shipment basis.</p>
+    <p class="note">Carton pack is pieces per carton. Balloons, glue dots and arch strips can be mixed within one carton; other lines ship in their own cartons.</p>
   </div>
 </section>
 
-<section class="alt" id="pricing">
+<section id="pricing" class="soft">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Price tiers</h2>
-      <p>Three tiers, same price list for every buyer. No hidden negotiation, no surprise at invoice.</p>
-    </div>
+    <div class="eyebrow">Price tiers</div>
+    <h2>Three tiers, published</h2>
+    <p class="sub">The same list for every buyer. No hidden negotiation, no surprise at invoice.</p>
 
-    <div class="table-scroll">
+    <div class="tbl-wrap">
       <table>
         <thead>
           <tr>
-            <th>SKU</th>
-            <th>Item</th>
-            <th class="num">Tier A &middot; 500+</th>
-            <th class="num">Tier B &middot; 2,000+</th>
-            <th class="num">Tier C &middot; 10,000+</th>
-            <th class="num">Suggested retail</th>
+            <th>SKU</th><th>Item</th>
+            <th>Tier A · 500+</th><th>Tier B · 2,000+</th><th>Tier C · 10,000+</th>
+            <th>Suggested retail</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td class="sku">PP-01</td><td>Balloons 12&quot;</td><td class="num price">$0.055</td><td class="num price">$0.051</td><td class="num price"><b>$0.047</b></td><td class="num">$0.11</td></tr>
-          <tr><td class="sku">PP-02</td><td>Balloon glue dots</td><td class="num price">$0.35</td><td class="num price">$0.32</td><td class="num price"><b>$0.30</b></td><td class="num">$0.70</td></tr>
-          <tr><td class="sku">PP-03</td><td>Balloon arch strip</td><td class="num price">$0.35</td><td class="num price">$0.32</td><td class="num price"><b>$0.30</b></td><td class="num">$0.70</td></tr>
-          <tr><td class="sku">PP-04</td><td>Table cover 54&times;108</td><td class="num price">$1.00</td><td class="num price">$0.92</td><td class="num price"><b>$0.85</b></td><td class="num">$2.00</td></tr>
-          <tr><td class="sku">PP-05</td><td>Birthday banner</td><td class="num price">$0.90</td><td class="num price">$0.83</td><td class="num price"><b>$0.77</b></td><td class="num">$1.80</td></tr>
-          <tr><td class="sku">PP-06</td><td>Hand balloon pump</td><td class="num price">$2.50</td><td class="num price">$2.30</td><td class="num price"><b>$2.12</b></td><td class="num">$5.00</td></tr>
-          <tr><td class="sku">PP-07</td><td>Balloon arch kit</td><td class="num price">$12.99</td><td class="num price">$11.95</td><td class="num price"><b>$11.04</b></td><td class="num">$25.98</td></tr>
-          <tr><td class="sku">PP-08</td><td>Foot balloon pump</td><td class="num price">$3.00</td><td class="num price">$2.76</td><td class="num price"><b>$2.55</b></td><td class="num">$6.00</td></tr>
+          <tr><td class="sku">PP-01</td><td>Balloons 12"</td><td class="price">$0.055</td><td class="price">$0.051</td><td class="price">$0.047</td><td class="price"><small>$0.11</small></td></tr>
+          <tr><td class="sku">PP-02</td><td>Balloon glue dots</td><td class="price">$0.35</td><td class="price">$0.32</td><td class="price">$0.30</td><td class="price"><small>$0.70</small></td></tr>
+          <tr><td class="sku">PP-03</td><td>Balloon arch strip</td><td class="price">$0.35</td><td class="price">$0.32</td><td class="price">$0.30</td><td class="price"><small>$0.70</small></td></tr>
+          <tr><td class="sku">PP-04</td><td>Table cover 54×108 in</td><td class="price">$1.00</td><td class="price">$0.92</td><td class="price">$0.85</td><td class="price"><small>$2.00</small></td></tr>
+          <tr><td class="sku">PP-05</td><td>Happy Birthday banner</td><td class="price">$0.90</td><td class="price">$0.83</td><td class="price">$0.77</td><td class="price"><small>$1.80</small></td></tr>
+          <tr><td class="sku">PP-06</td><td>Hand balloon pump</td><td class="price">$2.50</td><td class="price">$2.30</td><td class="price">$2.12</td><td class="price"><small>$5.00</small></td></tr>
+          <tr><td class="sku">PP-07</td><td>Balloon arch kit</td><td class="price">$12.99</td><td class="price">$11.95</td><td class="price">$11.04</td><td class="price"><small>$25.98</small></td></tr>
+          <tr><td class="sku">PP-08</td><td>Foot balloon pump</td><td class="price">$3.00</td><td class="price">$2.76</td><td class="price">$2.55</td><td class="price"><small>$6.00</small></td></tr>
         </tbody>
       </table>
     </div>
-    <p class="tier-note">Suggested retail is a reference only &mdash; you set your own shelf price.</p>
+    <p class="note">All prices FOB Shenzhen, freight quoted at cost on a per-shipment basis. Suggested retail is a reference only — you set your own shelf price.</p>
   </div>
 </section>
 
-<section id="terms">
+<section id="why">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Why buyers work with us</h2>
-      <p>We are a factory-side supplier, not a trading company marking up someone else's goods.</p>
-    </div>
-    <div class="grid g3">
-      <div class="card">
-        <div class="ico">01</div>
-        <h3>Factory prices, no markup chain</h3>
-        <p>We own the relationship with the production lines. What you see is what the factory quotes, plus our margin &mdash; nothing else.</p>
-      </div>
-      <div class="card">
-        <div class="ico">02</div>
-        <h3>Small orders, by air</h3>
-        <p>USD 500 minimum, shipped by air, at your door in 7&ndash;12 days. No container, no pallet, no three-month wait.</p>
-      </div>
-      <div class="card">
-        <div class="ico">03</div>
-        <h3>Your label, applied free</h3>
-        <p>Neutral cartons by default. Send us your label artwork and we apply it at no charge &mdash; single colour, one label per unit.</p>
-      </div>
-      <div class="card">
-        <div class="ico">04</div>
-        <h3>Mixed cartons</h3>
-        <p>Balloons, glue dots and arch strips can share a carton, so you can test six colours without buying six cartons.</p>
-      </div>
-      <div class="card">
-        <div class="ico">05</div>
-        <h3>Carton specs published</h3>
-        <p>Every SKU lists its carton pack, carton size and gross weight. You can cost the freight before you ask us anything.</p>
-      </div>
-      <div class="card">
-        <div class="ico">06</div>
-        <h3>One person answers</h3>
-        <p>You talk to the same person from quote to delivery. No ticket system, no handover, no "let me check with my colleague".</p>
-      </div>
+    <div class="eyebrow">Why buyers work with us</div>
+    <h2>Six reasons, no fluff</h2>
+    <p class="sub">These are the things that decide whether a re-order happens. We put them in writing.</p>
+
+    <div class="cards">
+      <div class="card"><h3><span class="dot"></span>Factory price, no chain</h3><p>We buy direct from the producer and ship to you. There is no importer, no distributor and no rep in between taking a cut.</p></div>
+      <div class="card"><h3><span class="dot"></span>Small orders by air</h3><p>USD 500 minimum per shipment, not a container. 7–12 days door to door, so you can test a line without tying up capital.</p></div>
+      <div class="card"><h3><span class="dot"></span>Your label, free</h3><p>Neutral cartons by default. Send us your artwork and we apply your label at no charge — one colour, one position.</p></div>
+      <div class="card"><h3><span class="dot"></span>Mixed cartons</h3><p>Balloons, glue dots and arch strips can share a carton across colours. You do not have to buy 5,000 of one colour to get a colour range.</p></div>
+      <div class="card"><h3><span class="dot"></span>Carton specs published</h3><p>Pack quantity, carton dimensions and gross weight for every SKU are on this page. Quote your freight before you commit.</p></div>
+      <div class="card"><h3><span class="dot"></span>One person, direct</h3><p>You talk to the person who places the order with the factory. No ticket queue, no account manager handoff, no script.</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section class="soft">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>How an order runs</h2>
-      <p>From first message to goods on your shelf.</p>
-    </div>
+    <div class="eyebrow">How an order runs</div>
+    <h2>Four steps to your door</h2>
+    <p class="sub">From first message to delivered goods, typically 3–4 weeks.</p>
+
     <div class="steps">
-      <div class="step">
-        <h4>You send the list</h4>
-        <p>SKUs, quantities, colours. A photo of a competitor's shelf works too.</p>
-      </div>
-      <div class="step">
-        <h4>We quote in 24h</h4>
-        <p>FOB price, freight to your door, and the landed cost per unit.</p>
-      </div>
-      <div class="step">
-        <h4>30% deposit</h4>
-        <p>Production starts. Cartons are packed neutral, or with your label.</p>
-      </div>
-      <div class="step">
-        <h4>Air freight, 7&ndash;12 days</h4>
-        <p>Tracking from the day it leaves. Balance against the bill of lading.</p>
-      </div>
+      <div class="step"><div class="n">1</div><h3>Send your list</h3><p>Tell us SKUs, quantities and colours. A photo or a rough list is enough to start.</p></div>
+      <div class="step"><div class="n">2</div><h3>Quote in 24h</h3><p>We reply with FOB prices, freight to your city and the total landed cost per unit.</p></div>
+      <div class="step"><div class="n">3</div><h3>30% deposit</h3><p>Production starts on deposit. Balance against the shipping documents before dispatch.</p></div>
+      <div class="step"><div class="n">4</div><h3>Air freight</h3><p>Goods leave Shenzhen and reach your door in 7–12 days. Tracking shared on dispatch.</p></div>
     </div>
   </div>
 </section>
 
-<div class="contact" id="contact">
-  <div class="wrap">
+<section id="contact" class="contact">
+  <div class="contact-img"></div>
+  <div class="wrap cols">
     <div>
-      <h2>Tell us what you need</h2>
-      <p>Send your SKU list or a photo of what you are buying now. We will come back with a price, a carton breakdown and a landed cost to your door.</p>
+      <div class="eyebrow" style="color:#fbbf24">Contact</div>
+      <h2>Send your list, get a price</h2>
+      <p>We answer within 24 hours, Monday to Saturday. Tell us the SKUs and quantities and we will come back with FOB prices and freight to your door.</p>
 
-      <ul class="clist">
-        <li>
-          <div>
-            <span class="lbl">Email</span>
-            <a href="mailto:justin@pengnanhardware.com">justin@pengnanhardware.com</a>
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="lbl">WhatsApp</span>
-            <a href="https://wa.me/8613120586476">+86 131 2058 6476</a>
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="lbl">Company</span>
-            Fuzhou Pengnan Technology Co., Ltd.<br>
-            Fuzhou, Fujian, China
-          </div>
-        </li>
-        <li>
-          <div>
-            <span class="lbl">Reply time</span>
-            Within 24 hours, Monday to Saturday
-          </div>
-        </li>
-      </ul>
+      <div class="cli">
+        <div>
+          <b>Email</b>
+          <a href="mailto:justin@pengnanhardware.com">justin@pengnanhardware.com</a>
+        </div>
+      </div>
+      <div class="cli">
+        <div>
+          <b>WhatsApp</b>
+          <a href="https://wa.me/8613120586476" target="_blank" rel="noopener">+86 131 2058 6476</a>
+        </div>
+      </div>
+      <div class="cli">
+        <div>
+          <b>Company</b>
+          Fuzhou Pengnan Technology Co., Ltd.<br>
+          Fuzhou, Fujian, China
+        </div>
+      </div>
     </div>
 
     <form action="https://formsubmit.co/justin@pengnanhardware.com" method="POST">
       <h3>Request a quote</h3>
-      <div class="field">
-        <label for="name">Your name</label>
-        <input id="name" name="name" type="text" required placeholder="Jane Smith">
-      </div>
-      <div class="field">
-        <label for="company">Company</label>
-        <input id="company" name="company" type="text" required placeholder="Party Time LLC">
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required placeholder="you@company.com">
-      </div>
-      <div class="field">
-        <label for="msg">What do you need?</label>
-        <textarea id="msg" name="message" placeholder="PP-01 balloons, 5,000 pcs, mixed colours. Also interested in PP-04 table covers."></textarea>
-      </div>
-      <input type="hidden" name="_subject" value="Quote request from pengnanhardware.com">
+      <p class="hint">All fields optional except email — we will follow up either way.</p>
+
+      <input type="hidden" name="_subject" value="New quote request from pengnanhardware.com">
       <input type="hidden" name="_captcha" value="false">
-      <button class="btn btn-gold" type="submit">Send request</button>
-      <p class="formnote">We reply within 24 hours. No newsletter, no spam.</p>
+
+      <label for="f-name">Your name</label>
+      <input id="f-name" type="text" name="name" placeholder="Jane Smith">
+
+      <label for="f-email">Email</label>
+      <input id="f-email" type="email" name="email" placeholder="you@yourstore.com" required>
+
+      <label for="f-company">Store / company</label>
+      <input id="f-company" type="text" name="company" placeholder="Party Palace LLC">
+
+      <label for="f-qty">What do you need?</label>
+      <textarea id="f-qty" name="message" placeholder="e.g. PP-01 balloons 10,000 pcs mixed colours, PP-07 arch kit 100 sets. Shipping to Dallas TX."></textarea>
+
+      <button type="submit">Send request</button>
     </form>
   </div>
-</div>
+</section>
 
 <footer>
-  <div class="wrap foot">
-    <div><strong>Pengnan Party Supply</strong> &middot; Fuzhou Pengnan Technology Co., Ltd.</div>
-    <div>Wholesale only &middot; MOQ USD 500 per shipment &middot; FOB Shenzhen</div>
+  <div class="wrap row">
+    <div><b>Pengnan Party Supply</b> · Fuzhou Pengnan Technology Co., Ltd. · Fuzhou, Fujian, China</div>
+    <div>Wholesale only · MOQ USD 500 per shipment</div>
   </div>
 </footer>
 
