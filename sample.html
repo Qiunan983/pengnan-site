@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Sample — Pengnan Party Supply</title>
+<meta name="description" content="Order two free samples of any party supply SKU. You cover the courier (about USD 25-40 by DHL) and we refund it on your first order.">
+<style>
+  :root{
+    --ink:#0b1220; --ink2:#16213a; --line:#e3e7ee;
+    --mut:#68748a; --amber:#f59e0b; --amber-d:#d97706;
+    --paper:#ffffff; --soft:#f6f8fb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--amber-d)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:11px;color:#fff}
+  .logo{width:36px;height:36px;border-radius:9px;background:var(--amber);color:#0b1220;display:grid;place-items:center;font-weight:900;font-size:19px;flex:none}
+  .brand b{font-size:16px}
+  .brand span{display:block;font-size:10px;letter-spacing:.13em;color:#8ea0c0;text-transform:uppercase}
+  .nav nav{display:flex;gap:26px;font-size:14px;color:#c7d2e4}
+  .nav nav a:hover{color:#fff}
+  .btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:700;font-size:14px;border:1px solid transparent;cursor:pointer;transition:.18s}
+  .btn-amber{background:var(--amber);color:#161208}
+  .btn-amber:hover{background:#ffb01f}
+  .btn-ghost{border-color:rgba(255,255,255,.28);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  @media(max-width:820px){.nav nav{display:none}}
+
+  .top{background:var(--ink);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+  .top::after{content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(245,158,11,.22),transparent 68%)}
+  .top h1{font-size:clamp(28px,4.2vw,46px);line-height:1.12;letter-spacing:-.025em;margin:12px 0 16px;font-weight:800;max-width:720px}
+  .top h1 em{color:var(--amber);font-style:normal}
+  .top p{color:#c3cee0;font-size:16.5px;max-width:620px;margin:0}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(22px,3vw,32px);letter-spacing:-.02em;margin:0 0 12px;font-weight:800}
+  .sub{color:var(--mut);max-width:640px;margin:0 0 34px}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .step{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .step .n{width:26px;height:26px;border-radius:50%;background:var(--amber);color:#161208;font-weight:800;display:grid;place-items:center;font-size:13px;margin-bottom:12px}
+  .step h3{margin:0 0 6px;font-size:15px}
+  .step p{margin:0;color:var(--mut);font-size:13.5px}
+
+  .get{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:10px}
+  .get div{border-left:3px solid var(--amber);padding-left:14px}
+  .get b{display:block;font-size:14px;margin-bottom:3px}
+  .get span{font-size:13px;color:var(--mut)}
+
+  .formbox{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0}
+  .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}
+  input,select,textarea{width:100%;padding:11px 13px;border:1px solid #ccd4e0;border-radius:8px;font-size:14.5px;font-family:inherit;background:#fff}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 3px rgba(245,158,11,.16)}
+  textarea{min-height:96px;resize:vertical}
+  .full{grid-column:1/-1}
+  .hint{font-size:12.5px;color:var(--mut);margin-top:10px}
+
+  .faq{border-top:1px solid var(--line)}
+  details{padding:16px 0;border-bottom:1px solid var(--line)}
+  summary{cursor:pointer;font-weight:700;font-size:15px}
+  details p{margin:8px 0 0;color:var(--mut);font-size:14px}
+
+  footer{background:var(--ink);color:#8ea0c0;font-size:13px;padding:34px 0}
+  footer a{color:#c7d2e4}
+  @media(max-width:860px){.steps,.get,.fgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <div class="logo">P</div>
+      <div><b>Pengnan Party Supply</b><span>Wholesale · Factory direct</span></div>
+    </a>
+    <nav>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="sample.html">Free sample</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn-amber" href="#form">Get 2 free samples</a>
+  </div>
+</header>
+
+<div class="top">
+  <div class="wrap">
+    <div class="eyebrow">Sample policy</div>
+    <h1>Two free pieces. <em>You only pay the courier.</em></h1>
+    <p>Pick any two SKUs from the line sheet. We ship them by DHL in 48 hours. You cover the courier — usually USD 25–40 for a 0.5–1.5 kg parcel — and we credit that amount back on your first order.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">No paperwork, no deposit, no minimum. The whole point is to let you hold the product before you commit to a carton.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Tell us two SKUs</h3>
+        <p>Any two items from PP-01 to PP-08. Send the form below — we reply within one business day with the exact courier cost.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>Pay the courier only</h3>
+        <p>We send a courier invoice (DHL or FedEx). The goods are free. Typical parcel is 0.5–1.5 kg, USD 25–40.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>Ship in 48h, credited later</h3>
+        <p>Dispatched within 48 hours of payment. When you place your first order we deduct the courier amount from the invoice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2>What arrives in the parcel</h2>
+    <p class="sub">A sample pack is not just two loose pieces — it is everything you need to quote the line internally.</p>
+    <div class="get">
+      <div><b>2 product samples</b><span>Full production spec, not hand-made lab units</span></div>
+      <div><b>Printed line sheet</b><span>All 8 SKUs, carton specs, three price tiers</span></div>
+      <div><b>Carton + label sample</b><span>Actual carton mark and label layout we ship with</span></div>
+      <div><b>Your label proof</b><span>If you send artwork, we show you the label before it prints</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="formbox" id="form">
+  <div class="wrap" style="max-width:820px">
+    <h2>Request your samples</h2>
+    <p class="sub">Fill this in and we reply with the courier quote and a proforma for the freight. Nothing is charged until you approve.</p>
+
+    <form action="https://formsubmit.co/justin@pengnanhardware.com" method="POST">
+      <input type="hidden" name="_subject" value="Sample request — pengnanhardware.com">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+
+      <div class="fgrid">
+        <div>
+          <label for="name">Your name</label>
+          <input id="name" name="Name" required placeholder="Jane Doe">
+        </div>
+        <div>
+          <label for="company">Store / company</label>
+          <input id="company" name="Company" required placeholder="Party Town LLC">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="Email" required placeholder="you@yourstore.com">
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <input id="country" name="Country" required placeholder="United States">
+        </div>
+        <div>
+          <label for="skus">Which two SKUs</label>
+          <select id="skus" name="SKUs requested">
+            <option>PP-01 balloons + PP-02 glue dots</option>
+            <option>PP-01 balloons + PP-03 arch strip</option>
+            <option>PP-04 table cover + PP-05 banner</option>
+            <option>PP-06 hand pump + PP-08 foot pump</option>
+            <option>PP-07 arch kit + PP-01 balloons</option>
+            <option>Other — I will write it below</option>
+          </select>
+        </div>
+        <div>
+          <label for="business">Business type</label>
+          <select id="business" name="Business type">
+            <option>Party supply store</option>
+            <option>Balloon decorator / event stylist</option>
+            <option>Event wholesaler / distributor</option>
+            <option>Online retailer / Amazon seller</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="full">
+          <label for="address">Shipping address</label>
+          <textarea id="address" name="Shipping address" required placeholder="Street, city, state, ZIP, country"></textarea>
+        </div>
+        <div class="full">
+          <label for="notes">Anything else</label>
+          <textarea id="notes" name="Notes" placeholder="Colours you care about, label artwork, when you plan to order…"></textarea>
+        </div>
+        <div class="full">
+          <button class="btn btn-amber" type="submit" style="padding:13px 26px;font-size:15px">Send sample request</button>
+          <p class="hint">We reply within one business day. We do not add you to a mailing list — this form is for the sample only.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<section class="faq">
+  <div class="wrap" style="max-width:820px">
+    <h2>Questions buyers ask first</h2>
+    <details open>
+      <summary>Is it really free?</summary>
+      <p>The goods are free. You pay the courier, because international courier is charged per parcel and we cannot absorb it on a no-commitment sample. That courier amount is credited back in full on your first order.</p>
+    </details>
+    <details>
+      <summary>How long does the sample take to arrive?</summary>
+      <p>Dispatched within 48 hours of the courier payment clearing. DHL to the US and Canada is typically 4–7 days, Europe 4–6 days.</p>
+    </details>
+    <details>
+      <summary>Can I choose the colours?</summary>
+      <p>Yes. Balloons come in 6 colours at the same price, table covers in 5. Tell us in the notes field and we will pack those.</p>
+    </details>
+    <details>
+      <summary>What is the minimum order after the sample?</summary>
+      <p>USD 500 per shipment, any mix of SKUs. Balloons, glue dots and arch strips can share one carton; table covers, banners and pumps ship in their own cartons.</p>
+    </details>
+    <details>
+      <summary>Can you put my label on the product?</summary>
+      <p>Yes — one colour, one position, applied free of charge. Send a vector file (PDF or AI) and we will show you a proof before printing. Retail-ready barcodes can go on the same label.</p>
+    </details>
+    <details>
+      <summary>Do you dropship or hold stock for me?</summary>
+      <p>No. We ship from China on a per-order basis, air freight, 7–12 days door to door after production. If you need US-based inventory we are not the right supplier yet.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+    <div>
+      <b style="color:#fff">Pengnan Party Supply</b> — Fuzhou Pengnan Technology Co., Ltd.<br>
+      Fuzhou, Fujian, China · +86 131 2058 6476
+    </div>
+    <div style="text-align:right">
+      <a href="index.html">Home</a> · <a href="line-sheet.pdf">Line sheet (PDF)</a> · <a href="mailto:justin@pengnanhardware.com">justin@pengnanhardware.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
